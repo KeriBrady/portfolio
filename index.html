@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,41 +7,48 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|News+Cycle' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/state.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
+    <header class="fullWidth">
+      <nav class="navFooterStyle">
+        <ul class="navList">
           <li><a href="">Home</a></li>
-          <li><a href="">About Me</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="">Resume</a></li>
         </ul>
       </nav>
-      <section>
-        <h1>Hi, I'm Keri Brady</h1>
-        <p>Web UI Developer with a background in Marketing and Communication</p>
+      <section class="headerBackground">
+        <h1>Hi, my name is Keri Brady.</h1>
+        <p class="description">I'm a Web UI Developer with a background in Marketing and Communication</p>
       </section>
     </header>
-    <section>
-      <div>
+    <section id="about">
+      <div class="subtitleSection about">
         <h1>About Me</h1>
-        <p>Description Description Description Description Description Description Description</p>
+        <p class="description">Description Description Description Description Description Description Description</p>
       </div>
-      <div>
-        <a href=""><img src="" alt="Resume icon"></a>
-        <p>Check out my Resume</p>
-        <img src="" alt="Keri Brady profile picture">
+      <div class="contentSection flex-container">
         <div>
-          <a href=""><img src="" alt="GitHub"></a>
-          <a href=""><img src="" alt="LinkedIn"></a>
-          <a href=""><img src="" alt="Twitter"></a>
+          <a href=""><img src="http://placehold.it/75x75" alt="Resume icon"></a>
+          <p>Check out my Resume</p>
+        </div>
+        <img class="profilePic" src="http://placehold.it/200x200" alt="Keri Brady profile picture">
+        <div>
+          <a href=""><img src="http://placehold.it/50x50" alt="GitHub"></a>
+          <a href=""><img src="http://placehold.it/50x50" alt="LinkedIn"></a>
+          <a href=""><img src="http://placehold.it/50x50" alt="Twitter"></a>
           <p>Follow me online</p>
         </div>
       </div>
-      <div>
-        <h1>Skills and Education</h1>
+      <div class="contentSection skillsEdu">
+        <h2>Skills and Education</h2>
         <div>
           <p>Proxy logarithmic in backbone controller gigabyte. Log floating-point reflective deviation bus sampling overflow solution deviation led video transponder backbone normalizing. Generator development for for bus cable, bypass, reducer feedback phase. Metafile supporting video application procedural development data, reducer prompt, processor infrared, normalizing harmonic metafile. Feedback phase network, disk logistically element bus bypass distributed scan.</p>
         </div>
@@ -53,36 +57,39 @@
         </div>
       </div>
     </section>
-    <section>
-      <div>
+    <section id="projects">
+      <div class="subtitleSection projects">
         <h1>Projects</h1>
-        <p>Description Description Description Description Description Description Description</p>
+        <p class="description">Description Description Description Description Description Description Description</p>
       </div>
-      <div>
-        <a href=""><img src="http://placehold.it/300x300"></a>
-        <a href=""><img src="http://placehold.it/300x300"></a>
-        <a href=""><img src="http://placehold.it/300x300"></a>
+      <div class="contentSection grid-container">
+        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
+        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
+        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
       </div>
     </section>
-    <section>
-      <div>
+    <section id="contact">
+      <div class="subtitleSection contact">
         <h1>Contact</h1>
-        <p>Description Description Description Description Description Description Description</p>
+        <p class="description">Description Description Description Description Description Description Description</p>
       </div>
-      <div>
-        <h2>Get in touch with me</h2>
-        <form>
-        </form>
-      </div>
-      <div>
-        <h2>Follow me online</h2>
-        <a href=""><img src="" alt="GitHub"></a>
-        <a href=""><img src="" alt="LinkedIn"></a>
-        <a href=""><img src="" alt="Twitter"></a>
+      <div class="contentSection flex-container contactContent">
+        <div>
+          <h2>Get in touch with me</h2>
+          <form>
+            <input>
+          </form>
+        </div>
+        <div>
+          <h2>Follow me online</h2>
+          <a href=""><img src="http://placehold.it/50x50" alt="GitHub"></a>
+          <a href=""><img src="http://placehold.it/50x50" alt="LinkedIn"></a>
+          <a href=""><img src="http://placehold.it/50x50" alt="Twitter"></a>
+        </div>
       </div>
     </section>
-    <footer>
-      <p>Designed by Keri Brady in 2015</p>
+    <footer class="navFooterStyle footerPadding">
+      <p class="description">Designed by Keri Brady in 2015</p>
     </footer>
   </body>
 </html>

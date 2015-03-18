@@ -1,0 +1,73 @@
+/*Header*/
+
+.navList li {
+  display: inline;
+  padding: 2em;
+}
+
+.navList {
+  padding: 1.5em;
+}
+
+.navList a {
+  color: #FFF;
+}
+
+.navFooterStyle {
+  background-color: #3B3B3B;
+}
+
+.headerBackground {
+  background-image: url("../img/greyPattern.png");
+  padding: 10em;
+}
+
+.description {
+  color: #696969;
+}
+
+.subtitleSection {
+  padding: 2em 0;
+}
+
+.about {
+  background-color: #21DBC9;
+}
+
+.profilePic {
+  max-width: 200px;
+}
+
+.contentSection {
+  padding: 5em 13em;
+}
+
+.skillsEdu {
+  padding-top: 0;
+}
+
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.projects {
+  background-color: #FF8226;
+}
+
+.contact {
+  background-color: #22E476;
+}
+
+.contactContent {
+  padding-right: 20em;
+  padding-left: 20em;
+}
+
+.footerPadding {
+  padding: 1em 0;
+}
