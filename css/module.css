@@ -1,5 +1,3 @@
-/*Header*/
-
 .navList li {
   display: inline;
   padding: 2em;
@@ -13,7 +11,7 @@
   color: #FFF;
 }
 
-.navFooterStyle {
+.navFooterColor {
   background-color: #3B3B3B;
 }
 
@@ -23,7 +21,8 @@
 }
 
 .description {
-  color: #696969;
+  color: #737373;
+  margin: 1.5em 12em;
 }
 
 .subtitleSection {
@@ -35,14 +34,19 @@
 }
 
 .profilePic {
-  max-width: 200px;
+  max-width: 300px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
 }
 
 .contentSection {
   padding: 5em 13em;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.skillsEdu {
+.skills {
   padding-top: 0;
 }
 
@@ -71,3 +75,90 @@
 .footerPadding {
   padding: 1em 0;
 }
+
+.leftJustify {
+  text-align: left;
+}
+
+.details {
+  margin-top: .5em;
+  padding-left: 1em;
+}
+
+.topBorder {
+  border-top: 1px solid #9E9E9E;
+}
+
+.skillsPadding {
+  padding: 0 2em 0 2em;
+}
+
+.icon {
+  max-width: 40px;
+}
+
+/*Project Tile styles*/
+
+.caption-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.caption-style li{
+  float: left;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.caption-style li:hover .caption{
+  opacity: 1;
+}
+
+.caption-style img{
+  margin: 0;
+  padding: 0;
+  float: left;
+  z-index: 4;
+  max-width: 300px;
+}
+
+.caption-style .caption{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition:all 0.45s ease-in-out;
+  -moz-transition:all 0.45s ease-in-out;
+  -o-transition:all 0.45s ease-in-out;
+  -ms-transition:all 0.45s ease-in-out;
+  transition:all 0.45s ease-in-out;
+}
+
+.caption-style .blur{
+  background-color: rgba(0,0,0,0.65);
+  height: 300px;
+  width: 300px;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-style .caption-text h1{
+  font-size: 1.618em;
+}
+
+.caption-style .caption-text{
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  top: 100px;
+}
+
+
+
+
+
+

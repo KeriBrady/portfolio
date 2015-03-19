@@ -412,6 +412,13 @@ h2 {
   font-family: 'Nixie One', cursive;
 }
 
+h3 {
+  font-size: 1em;
+  font-family: 'Nixie One', cursive;
+  margin-top: 0;
+  margin-bottom: .7em;
+}
+
 ul {
   margin: 0;
 }

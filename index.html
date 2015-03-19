@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="fullWidth">
-      <nav class="navFooterStyle">
+      <nav class="navFooterColor">
         <ul class="navList">
           <li><a href="">Home</a></li>
           <li><a href="#about">About Me</a></li>
@@ -32,40 +32,97 @@
     <section id="about">
       <div class="subtitleSection about">
         <h1>About Me</h1>
-        <p class="description">Description Description Description Description Description Description Description</p>
+        <p class="description">I have a well-rounded educational background with a certificate in Web UI Design and BA in Communication. Professionally, I have worked in retail management and tech marketing. I'm ready for the next challenge that will allow me to grow and expand my skill set in a collaborative environment.</p>
       </div>
-      <div class="contentSection flex-container">
+      <section class="contentSection flex-container">
         <div>
           <a href=""><img src="http://placehold.it/75x75" alt="Resume icon"></a>
           <p>Check out my Resume</p>
         </div>
-        <img class="profilePic" src="http://placehold.it/200x200" alt="Keri Brady profile picture">
+        <img class="profilePic" src="img/Keri-Brady.jpg" alt="Keri Brady profile picture">
         <div>
-          <a href=""><img src="http://placehold.it/50x50" alt="GitHub"></a>
-          <a href=""><img src="http://placehold.it/50x50" alt="LinkedIn"></a>
-          <a href=""><img src="http://placehold.it/50x50" alt="Twitter"></a>
+          <a href=""><img class="icon" src="img/github.svg" alt="GitHub"></a>
+          <a href=""><img class="icon" src="img/linkedin.svg" alt="LinkedIn"></a>
+          <a href=""><img class="icon" src="img/twitter.svg" alt="Twitter"></a>
           <p>Follow me online</p>
         </div>
-      </div>
-      <div class="contentSection skillsEdu">
-        <h2>Skills and Education</h2>
+      </section>
+      <section class="contentSection skills">
+        <h2>Skills</h2>
         <div>
-          <p>Proxy logarithmic in backbone controller gigabyte. Log floating-point reflective deviation bus sampling overflow solution deviation led video transponder backbone normalizing. Generator development for for bus cable, bypass, reducer feedback phase. Metafile supporting video application procedural development data, reducer prompt, processor infrared, normalizing harmonic metafile. Feedback phase network, disk logistically element bus bypass distributed scan.</p>
+          <div class="leftJustify grid-container subtitleSection">
+            <ul class="grid-50 skillsPadding">
+              <li>Semantic structure and modular concepts with HTML5</li>
+              <li>Haml, Jade, and Markdown HTML abstraction languages</li>
+              <li>Modular CSS, SMACSS and BEM</li>
+              <li>SASS techniques for building modular, scalable, and maintainable UI code base</li>
+            </ul>
+            <ul class="grid-50 skillsPadding">
+              <li>Responsive web design with grids and media queries</li>
+              <li>Agile development</li>
+              <li>Living style guides</li>
+            </ul>
+          </div>
+          <div class="grid-container subtitleSection topBorder">
+            <div class="leftJustify grid-50">
+              <h3>Code Fellows</h3>
+              <p class="details">Web UI Development</p>
+              <!-- <p class="details">Code Fellows is a digital trade school located in Seattle, WA. In the Web UI Development Accelerator program, I learned advanced HTML5, CSS3, Sass, responsive web design, and JavaScript to be able to integrate with development teams. This course also covered building a simple server-side app leveraging concepts from Node.js and concepts around iterative design development to include style tiles, sketching, wireframing, and algorithmic flow diagrams.</p> -->
+            </div>
+            <div class="leftJustify grid-50">
+              <h3>Western Washington University</h3>
+              <p class="details">BA in Communication</p>
+              <!-- <p class="details">At WWU, located in Bellingham, WA, I earned a BA in Communication and a minor in Psychology. In addition, I took several courses on technical writing, computer science, web development, and classes largely comprised of teaching and class leadership components.</p> -->
+            </div>
+          </div>
         </div>
-        <div>
-          <p>Proxy logarithmic in backbone controller gigabyte. Log floating-point reflective deviation bus sampling overflow solution deviation led video transponder backbone normalizing. Generator development for for bus cable, bypass, reducer feedback phase.</p>
-        </div>
-      </div>
+      </section>
     </section>
     <section id="projects">
       <div class="subtitleSection projects">
         <h1>Projects</h1>
         <p class="description">Description Description Description Description Description Description Description</p>
       </div>
-      <div class="contentSection grid-container">
-        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
-        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
-        <a href=""><img src="http://placehold.it/300x300" class="grid-33"></a>
+      <div class="contentSection clearfix">
+        <ul class="caption-style">
+          <li>
+            <a href="project-pages/zoo-site.html">
+              <img src="img/zoo-tile.png">
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>Zoo Website Project</h1>
+                  <p>This project was built with a mobile-first strategy. Worked with media queries, responsive grid, modular CSS, and semantic HTML5.</p>
+                  <p>Click to read more</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="http://placehold.it/300x300">
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>Project Title</h1>
+                  <p>Description of the project goes here</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="http://placehold.it/300x300">
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>Project Title</h1>
+                  <p>Description of the project goes here</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section id="contact">
@@ -88,7 +145,7 @@
         </div>
       </div>
     </section>
-    <footer class="navFooterStyle footerPadding">
+    <footer class="navFooterColor footerPadding">
       <p class="description">Designed by Keri Brady in 2015</p>
     </footer>
   </body>
