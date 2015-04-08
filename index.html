@@ -8,20 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link href='http://fonts.googleapis.com/css?family=Nixie+One|News+Cycle' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/module.css">
-    <link rel="stylesheet" type="text/css" href="css/state.css">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
   </head>
   <body>
     <header class="fullWidth">
       <nav class="navFooterColor">
         <ul class="navList">
-          <li><a href="">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="">Resume</a></li>
+          <li><a class="navLinks" href="">Home</a></li>
+          <li><a class="navLinks" href="#about">About Me</a></li>
+          <li><a class="navLinks" href="#projects">Projects</a></li>
+          <li><a class="navLinks" href="#contact">Contact</a></li>
+          <li><a class="navLinks" href="">Resume</a></li>
         </ul>
       </nav>
       <section class="headerBackground">
@@ -32,47 +29,44 @@
     <section id="about">
       <div class="subtitleSection about">
         <h1>About Me</h1>
-        <p class="description">I have a well-rounded educational background with a certificate in Web UI Design and BA in Communication. Professionally, I have worked in retail management and tech marketing. I'm ready for the next challenge that will allow me to grow and expand my skill set in a collaborative environment.</p>
       </div>
-      <section class="contentSection flex-container">
-        <div>
-          <a href=""><img src="http://placehold.it/75x75" alt="Resume icon"></a>
-          <p>Check out my Resume</p>
+      <section class="contentSection flex-container grid-container">
+        <div class="grid-20">
+          <a href=""><img src="img/resumeIcon.png" alt="Resume icon"></a>
+          <p class="zeroTopMargin">Check out my Resume</p>
         </div>
-        <img class="profilePic" src="img/Keri-Brady.jpg" alt="Keri Brady profile picture">
-        <div>
+        <div class="grid-50 prefix-5 suffix-5 rightBorder leftBorder">
+          <p>I have a well-rounded educational background with a certificate in <span class="specialText1">Web UI Design</span> and BA in <span class="specialText2">Communication</span>. Professionally, I have worked in tech marketing and retail management. I'm ready for the next challenge that will allow me to grow and expand my skill set in a <span class="specialText3">collaborative environment</span>.</p>
+        </div>
+        <div class="grid-20">
           <a href=""><img class="icon" src="img/github.svg" alt="GitHub"></a>
           <a href=""><img class="icon" src="img/linkedin.svg" alt="LinkedIn"></a>
           <a href=""><img class="icon" src="img/twitter.svg" alt="Twitter"></a>
           <p>Follow me online</p>
         </div>
       </section>
-      <section class="contentSection skills">
-        <h2>Skills</h2>
+      <section class="contentSection zeroTopPadding">
+        <h2>Skills &amp; Education</h2>
         <div>
           <div class="leftJustify grid-container subtitleSection">
-            <ul class="grid-50 skillsPadding">
-              <li>Semantic structure and modular concepts with HTML5</li>
-              <li>Haml, Jade, and Markdown HTML abstraction languages</li>
-              <li>Modular CSS, SMACSS and BEM</li>
-              <li>SASS techniques for building modular, scalable, and maintainable UI code base</li>
+            <ul class="grid-50 skillsPadding graph rightBorder">
+              <li class="percent90">HTML</li>
+              <li class="percent80">CSS</li>
+              <li class="percent70">SASS</li>
+              <li class="percent60">JavaScript</li>
+              <li class="percent70-2">Design</li>
             </ul>
-            <ul class="grid-50 skillsPadding">
-              <li>Responsive web design with grids and media queries</li>
-              <li>Agile development</li>
-              <li>Living style guides</li>
-            </ul>
-          </div>
-          <div class="grid-container subtitleSection topBorder">
-            <div class="leftJustify grid-50">
-              <h3>Code Fellows</h3>
-              <p class="details">Web UI Development</p>
-              <!-- <p class="details">Code Fellows is a digital trade school located in Seattle, WA. In the Web UI Development Accelerator program, I learned advanced HTML5, CSS3, Sass, responsive web design, and JavaScript to be able to integrate with development teams. This course also covered building a simple server-side app leveraging concepts from Node.js and concepts around iterative design development to include style tiles, sketching, wireframing, and algorithmic flow diagrams.</p> -->
-            </div>
-            <div class="leftJustify grid-50">
-              <h3>Western Washington University</h3>
-              <p class="details">BA in Communication</p>
-              <!-- <p class="details">At WWU, located in Bellingham, WA, I earned a BA in Communication and a minor in Psychology. In addition, I took several courses on technical writing, computer science, web development, and classes largely comprised of teaching and class leadership components.</p> -->
+            <div class="grid-50 leftJustify paddingLeft">
+              <div>
+                <h3>Code Fellows</h3>
+                <p class="details">Web UI Development</p>
+                <h3>Western Washington University</h3>
+                <p class="details">BA in Communication</p>
+              </div>
+              <div>
+                <img src="img/codefellowsLogo.png" alt="Code Fellows logo" class="largeIcon">
+                <img src="img/wwuLogo.png" alt="WWU logo" class="largeIcon">
+              </div>
             </div>
           </div>
         </div>
@@ -81,10 +75,22 @@
     <section id="projects">
       <div class="subtitleSection projects">
         <h1>Projects</h1>
-        <p class="description">Description Description Description Description Description Description Description</p>
+        <!-- <p class="description">Check out my latest projects below.</p> -->
       </div>
       <div class="contentSection clearfix">
         <ul class="caption-style">
+          <li>
+            <a href="project-pages/cinefy.html">
+              <img src="http://placehold.it/300x300">
+              <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                  <h1>Cinefy</h1>
+                  <p>In a four-day sprint, I worked with a team of four JavaScript full-stack developers to design and develop an app using AngularJS, node.js, database storage, HTML, and CSS.</p>
+                </div>
+              </div>
+            </a>
+          </li>
           <li>
             <a href="project-pages/zoo-site.html">
               <img src="img/zoo-tile.png">
@@ -93,19 +99,6 @@
                 <div class="caption-text">
                   <h1>Zoo Website Project</h1>
                   <p>This project was built with a mobile-first strategy. Worked with media queries, responsive grid, modular CSS, and semantic HTML5.</p>
-                  <p>Click to read more</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="http://placehold.it/300x300">
-              <div class="caption">
-                <div class="blur"></div>
-                <div class="caption-text">
-                  <h1>Project Title</h1>
-                  <p>Description of the project goes here</p>
                 </div>
               </div>
             </a>
@@ -128,25 +121,23 @@
     <section id="contact">
       <div class="subtitleSection contact">
         <h1>Contact</h1>
-        <p class="description">Description Description Description Description Description Description Description</p>
+        <!-- <p class="description">Description Description Description Description Description Description Description</p> -->
       </div>
-      <div class="contentSection flex-container contactContent">
-        <div>
+      <div class="contentSection grid-container contactContent">
+        <div class="grid-50">
           <h2>Get in touch with me</h2>
-          <form>
-            <input>
-          </form>
+          <a href="mailto:keridbrady@gmail.com">Email</a>
         </div>
-        <div>
+        <div class="grid-50">
           <h2>Follow me online</h2>
-          <a href=""><img src="http://placehold.it/50x50" alt="GitHub"></a>
-          <a href=""><img src="http://placehold.it/50x50" alt="LinkedIn"></a>
-          <a href=""><img src="http://placehold.it/50x50" alt="Twitter"></a>
+          <a href=""><img class="icon" src="img/github.svg" alt="GitHub"></a>
+          <a href=""><img class="icon" src="img/linkedin.svg" alt="LinkedIn"></a>
+          <a href=""><img class="icon" src="img/twitter.svg" alt="Twitter"></a>
         </div>
       </div>
     </section>
     <footer class="navFooterColor footerPadding">
-      <p class="description">Designed by Keri Brady in 2015</p>
+      <p class="description">Keri Brady &copy; 2015</p>
     </footer>
   </body>
 </html>

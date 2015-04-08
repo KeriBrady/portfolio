@@ -1,0 +1,33 @@
+.contentSection {
+  @include padding(5em 13em);
+}
+
+.leftJustify {
+  text-align: left;
+}
+
+.rightBorder {
+  border-right: 1px solid $light-gray;
+}
+
+.leftBorder {
+  border-left: 1px solid $light-gray;
+}
+
+.zeroTopMargin {
+  margin-top: 0;
+}
+
+.paddingLeft {
+  @include padding(0 0 0 1.5em);
+}
+
+.zeroTopPadding {
+  padding-top: 0;
+}
+
+.flex-container {
+  display:flex;
+  align-content: center;
+  align-items: center;
+}

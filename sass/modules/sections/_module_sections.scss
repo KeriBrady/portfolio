@@ -1,0 +1,44 @@
+.description {
+  color: $medium-gray;
+  margin: 1.5em 12em;
+}
+
+.subtitleSection {
+  @include padding(2em 0);
+}
+
+.about {
+  background-color: $color-1;
+}
+
+.profilePic {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.projects {
+  background-color: $color-2;
+}
+
+.contact {
+  background-color: $color-3;
+}
+
+.contactContent {
+  @include padding(0 20em);
+}
+
+.footerPadding {
+  @include padding(1em 0);
+}
+
+.details {
+  margin-top: .5em;
+  padding-left: 1em;
+}
+
+.skillsPadding {
+  @include padding(0 2em);
+}
+
+

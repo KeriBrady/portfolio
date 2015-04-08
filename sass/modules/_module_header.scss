@@ -1,0 +1,22 @@
+.navList {
+  padding: 1.5em;
+
+  li {
+    display: inline;
+    padding: 2em;
+  }
+
+  a {
+    color: $white;
+    padding: .5em;
+  }
+}
+
+.navFooterColor {
+  background-color: $dark-gray;
+}
+
+.headerBackground {
+  background-image: url("../img/greyPattern.png");
+  padding: 10em;
+}
