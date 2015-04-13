@@ -1,8 +1,26 @@
 .navLinks:hover {
-  color: $color-2;
+  color: $color-1;
 }
 
-// .imageLink:hover {
+.imageLink {
+  transition: opacity .20s ease;
+  opacity: 1;
+}
 
-// }
+.imageLink:hover {
+  opacity: .5;
+}
 
+button:hover,
+button:active {
+  transition: all .25s ease;
+  color: $color-1;
+  border-color: $color-1;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+  outline: none;
+}

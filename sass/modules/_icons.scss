@@ -1,8 +1,15 @@
 .icon {
-  max-width: 50px;
+  width: 50px;
+  @include padding(0 .25em);
 }
 
 .largeIcon {
   max-width: 100px;
-  padding: .7em 2em;
+  padding: .7em .7em;
+}
+
+.socialIcons {
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 1em;
+  }
 }

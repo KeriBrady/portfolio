@@ -1,5 +1,33 @@
 .contentSection {
-  @include padding(5em 13em);
+  @include padding(5em 3em 2em 3em);
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include padding(5em 3em 2em 3em);
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    @include padding(5em 13em);
+  }
+}
+
+.skillsSection {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include padding(0 5em);
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding: 0;
+  }
+
+  div {
+    @media screen and (min-width: $breakpoint-tablet) {
+      @include padding(1em 0);
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include padding(0 1.5em);
+    }
+  }
+}
+
+.projectTileSection {
+  @include padding(5em 5em);
 }
 
 .leftJustify {
@@ -7,19 +35,31 @@
 }
 
 .rightBorder {
-  border-right: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  @media screen and (min-width: $breakpoint-desktop) {
+    border-right: 1px solid $light-gray;
+    border-bottom: none;
+  }
 }
 
 .leftBorder {
-  border-left: 1px solid $light-gray;
+  border-top: 1px solid $light-gray;
+  @media screen and (min-width: $breakpoint-desktop) {
+    border-left: 1px solid $light-gray;
+    border-top: none;
+  }
+}
+
+.topBorder {
+  border-top: 1px solid $light-gray;
 }
 
 .zeroTopMargin {
   margin-top: 0;
 }
 
-.paddingLeft {
-  @include padding(0 0 0 1.5em);
+.zeroMargin {
+  margin: 0;
 }
 
 .zeroTopPadding {
@@ -27,7 +67,24 @@
 }
 
 .flex-container {
-  display:flex;
-  align-content: center;
-  align-items: center;
+  @media screen and (min-width: $breakpoint-desktop) {
+    display:flex;
+    align-content: center;
+    align-items: center;
+  }
 }
+
+.mobileCenter {
+  text-align: center;
+  @media screen and (min-width: $breakpoint-desktop) {
+    text-align: left;
+  }
+}
+
+.details {
+  margin-top: .5em;
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding-left: 1em;
+  }
+}
+

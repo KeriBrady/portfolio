@@ -1,0 +1,20 @@
+.screenshot {
+  max-width: 500px;
+}
+
+.smallScreenshot {
+  max-width: 325px;
+}
+
+.projectPagePadding {
+  @include padding(2em 5em);
+}
+
+.fullBorder {
+  border: 1px solid $light-gray;
+  @include padding(.5em);
+}
+
+.bigTopBottomPadding {
+  @include padding(4em 0);
+}

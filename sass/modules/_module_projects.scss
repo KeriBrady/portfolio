@@ -1,107 +1,24 @@
 /*Project Tile styles*/
 
-.caption-style {
-  list-style-type: none;
+.projectTiles {
+  padding: 0;
 
   li {
-    float: left;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-
-    &:hover .caption {
-    opacity: 1;
-    }
+    display: inline-block;
+    @include padding(.5em .5em);
   }
 
-  img {
-    margin: 0;
-    padding: 0;
-    float: left;
-    z-index: 4;
-    max-width: 300px;
+  h3 {
+    @include padding(.7em 0 0 0);
   }
 
-  .caption {
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
-    transition: all 0.45s ease-in-out;
-  }
-
-  .blur {
-    background-color: rgba(0, 0, 0, 0.65);
-    height: 300px;
-    width: 300px;
-    z-index: 5;
-    position: absolute;
-  }
-
-  .caption-text {
-    z-index: 10;
-    color: #fff;
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    top: 100px;
-
-    h1 {
-      font-size: 1.618em;
-    }
-    p {
-      padding: 0 1em;
-    }
+  p {
+    font-size: .9em;
   }
 }
 
-
-// .caption-style li:hover .caption {
-//     opacity: 1;
-//     }
-// }
-
-// .caption-style img {
-//   margin: 0;
-//   padding: 0;
-//   float: left;
-//   z-index: 4;
-//   max-width: 300px;
-// }
-
-// .caption-style .caption {
-//   cursor: pointer;
-//   position: absolute;
-//   opacity: 0;
-//   -webkit-transition:all 0.45s ease-in-out;
-//   -moz-transition:all 0.45s ease-in-out;
-//   -o-transition:all 0.45s ease-in-out;
-//   -ms-transition:all 0.45s ease-in-out;
-//   transition:all 0.45s ease-in-out;
-// }
-
-// .caption-style .blur {
-//   background-color: rgba(0,0,0,0.65);
-//   height: 300px;
-//   width: 300px;
-//   z-index: 5;
-//   position: absolute;
-// }
-
-// .caption-style .caption-text h1 {
-//   font-size: 1.618em;
-// }
-
-// .caption-style .caption-text {
-//   z-index: 10;
-//   color: #fff;
-//   position: absolute;
-//   width: 300px;
-//   height: 300px;
-//   text-align: center;
-//   top: 100px;
-// }
-
-// .caption-text p {
-//   padding: 0 1em;
-// }
+.caption {
+  width: 300px;
+  height: 100%;
+  background-color: #C9C9C9;
+}

@@ -7,31 +7,88 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Nixie+One|News+Cycle' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../css/base.css">
-    <link rel="stylesheet" type="text/css" href="../css/layout.css">
-    <link rel="stylesheet" type="text/css" href="../css/module.css">
-    <link rel="stylesheet" type="text/css" href="../css/state.css">
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/application.css">
+
   </head>
   <body>
     <header class="fullWidth">
       <nav class="navFooterColor">
         <ul class="navList">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#about">About Me</a></li>
-          <li><a href="../index.html#projects">Projects</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
-          <li><a href="">Resume</a></li>
+          <li><a class="navLinks" href="../index.html">Home</a></li>
+          <li><a class="navLinks" href="../index.html#about">About Me</a></li>
+          <li><a class="navLinks" href="../index.html#projects">Projects</a></li>
+          <li><a class="navLinks" href="../index.html#contact">Contact</a></li>
+          <li><a class="navLinks" href="">Resume</a></li>
         </ul>
       </nav>
-      <section class="headerBackground">
-        <h1>Cinefy</h1>
-        <p class="description">Cinefy is a web application that allows movie watchers to get more out of their viewing experience by providing users with an opportunity to like and later re-visit products, songs, and other fun facts from their favorite films.
-
-As the sole UI Developer, I created style tiles for branding (primarily color and typography), wireframes for site structure and layout, and led development of all HTML and CSS components in the project.
-
-Cinefy was created with an AngularJS front-end, a Node.js back-end that utilizes a RESTful Express API to route user requests, and a MongoDB persistence layer.</p>
+      <section class="projectHeaderBackground">
+        <h1 class="zeroMargin">Cinefy</h1>
+        <a href="http://cinefy.herokuapp.com/" target="_blank"><button>View the site</button></a>
+        <a href="https://github.com/cinefy/cinefy/tree/heroku" target="_blank"><button>Check the code</button></a>
       </section>
     </header>
+    <main class="projectPagePadding">
+      <section class="grid-container bigTopBottomPadding">
+        <div class="grid-50 leftJustify">
+          <h1 class="subTitle zeroTopMargin">Overview</h1>
+          <p>
+            In a four-day sprint, I worked with a team of four JavaScript full-stack developers to design and develop the Cinefy app from the ground up using AngularJS, node.js, database storage, HTML, and CSS.
+          </p>
+          <p>
+            Cinefy is a web application that allows movie watchers to get more out of their viewing experience by providing users with an opportunity to 'like' and later re-visit products, songs, and other fun facts from their favorite films.
+          </p>
+        </div>
+        <div class="grid-50">
+          <img class="screenshot" src="../img/cinefy_home.png" alt="Screenshot of Cinefy homepage">
+        </div>
+      </section>
+      <section class="grid-container topBorder bigTopBottomPadding">
+        <div class="grid-33 leftJustify">
+          <h1 class="subTitle zeroTopMargin">Process</h1>
+          <p>
+            As the sole UI Developer, I created style tiles for branding (primarily color and typography), wireframes for site structure and layout, and led development of all HTML and CSS components in the project.
+          </p>
+          <p>
+            To manage tasks, my team used Trello boards. Every morning we would hold a quick stand up meeting to communicate what we had worked on, what we were going to work on that day, and if there was anything blocking our work.
+          </p>
+        </div>
+        <div class="grid-33">
+          <figure>
+            <img class="smallScreenshot fullBorder" src="../img/style-tile-cinefy1.jpg" alt="Style tile">
+            <figcaption>Final style tile design</figcaption>
+          </figure>
+        </div>
+        <div class="grid-33">
+          <figure>
+            <img class="smallScreenshot" src="../img/cinefy_trello.jpg" alt="Trello board">
+            <figcaption>Trello board with tasks</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="grid-container topBorder bigTopBottomPadding">
+        <div class="grid-33 leftJustify">
+          <h1 class="subTitle zeroTopMargin">Challenges</h1>
+          <p>
+            A huge challenge in designing and building Cinefy was figuring out how to showcase its intended user experience without a full native phone app. By collaborating with the JavaScript developers, I designed a demo page for the site that clearly illustrated the timed notification functionality of the app and how it would display on a mobile device as a movie is being watched.
+          </p>
+        </div>
+        <div class="grid-33">
+          <img class="smallScreenshot fullBorder" src="../img/cinefy_demo.jpg" alt="Cinefy demo page">
+        </div>
+        <div class="grid-33 leftJustify">
+          <h1 class="subTitle zeroTopMargin">Technologies</h1>
+          <p>
+            Cinefy's user interface was built with semantic HTML and modular CSS, organized with a SMACSS file structure.
+          </p>
+          <p>
+            The interactive features were built with an AngularJS front-end, a Node.js back-end that utilizes a RESTful Express API to route user requests, and a MongoDB persistence layer.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="navFooterColor footerPadding">
+      <p class="description">Keri Brady &copy; 2015</p>
+    </footer>
   </body>
 </html>
