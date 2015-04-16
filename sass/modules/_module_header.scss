@@ -1,38 +1,55 @@
-.navList {
-  padding: .5em;
+.navigation {
+  @include padding(1em 0);
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding: 1.5em;
+    float: right;
+  }
 
   li {
     display: inline;
-    padding: 2em;
+    @include padding(.5em);
     @media screen and (min-width: $breakpoint-tablet) {
       display: inline;
-      padding: 1em;
+      @include padding(1em);
     }
     @media screen and (min-width: $breakpoint-desktop) {
-      padding: 1.5em;
+      @include padding(1.5em);
     }
   }
-
-  @media screen and (min-width: $breakpoint-tablet) {
-    padding: 1.5em;
-  }
 }
-
-.navLinks {
-  transition: color .25s ease;
-  color: $white;
-  padding: .5em;
-}
-
-
 
 .navFooterColor {
   background-color: $dark-gray;
 }
 
+.navLinks {
+  transition: color .25s ease;
+  color: $white;
+  @include padding(1em 0);
+}
+
+.titleLink {
+  list-style: none;
+  @include padding(1em 0);
+  @media screen and (min-width: $breakpoint-tablet) {
+    float: left;
+    @include padding(1em 0 1em 1em);
+  }
+}
+
+.title {
+  font: $h2-size $header-font;
+  display: inline;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-left: 1em;
+  }
+}
+
+// Header
+
 .headerBackground {
   background-image: url("../img/greyPattern.png");
-  @include padding(10em 5em);
+  @include padding(5em 1em);
   @media screen and (min-width: $breakpoint-tablet) {
     @include padding(10em 4em);
   }
@@ -43,16 +60,11 @@
 
 .description {
   color: $medium-gray;
-  margin: 1em 5em;
+  margin: 1em;
   @media screen and (min-width: $breakpoint-tablet) {
     margin: 1em;
   }
   @media screen and (min-width: $breakpoint-desktop) {
     margin: 1.5em 12em;
   }
-}
-
-.projectHeaderBackground {
-  @extend .headerBackground;
-  @include padding(5em);
 }

@@ -1,26 +1,23 @@
-.navLinks:hover {
+.navLinks:hover,
+.navLinks:active,
+.navLinks:focus {
   color: $color-1;
+  outline: none;
 }
 
-.imageLink {
-  transition: opacity .20s ease;
-  opacity: 1;
-}
-
-.imageLink:hover {
+.imageLink:hover,
+.imageLink:active,
+.imageLink:focus {
   opacity: .5;
+  outline: none;
 }
 
 button:hover,
-button:active {
+button:active,
+button:focus {
   transition: all .25s ease;
   color: $color-1;
   border-color: $color-1;
-}
-
-button,
-button:hover,
-button:active,
-button:visited {
   outline: none;
 }
+

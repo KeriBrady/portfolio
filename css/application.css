@@ -137,7 +137,7 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 0; }
 
 /**
  * Address differences between Firefox and other browsers.
@@ -363,7 +363,8 @@ button {
   width: 200px;
   padding: .75em 0;
   margin: 2em .5em 0 .5em;
-  transition: all .25s ease; }
+  transition: all .25s ease;
+  outline: none; }
 
 .fullWidth {
   width: 100%; }
@@ -1157,15 +1158,14 @@ button {
 .about {
   background-color: #21DBC9; }
 
-.profilePic {
-  max-width: 300px;
-  border-radius: 50%; }
+.skillsHeader {
+  text-decoration: underline; }
 
 .projects {
-  background-color: #FF8226; }
+  background-color: #178DE8; }
 
 .contact {
-  background-color: #22E476; }
+  background-color: #17E85E; }
 
 .contactContent {
   padding: 2em 3em 2em 3em; }
@@ -1182,7 +1182,10 @@ button {
   padding: 1em 0; }
 
 .skillsPadding {
-  padding: 0 2em; }
+  padding: 0 0 1em 0; }
+  @media screen and (min-width: 48em) {
+    .skillsPadding {
+      padding: 0 2em; } }
 
 .contentSection {
   padding: 5em 3em 2em 3em; }
@@ -1202,26 +1205,29 @@ button {
 @media screen and (min-width: 43.75em) {
   .skillsSection div {
     padding: 1em 0; } }
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 48em) {
   .skillsSection div {
     padding: 0 1.5em; } }
 
 .projectTileSection {
-  padding: 5em 5em; }
+  padding: 1em; }
+  @media screen and (min-width: 43.75em) {
+    .projectTileSection {
+      padding: 5em 5em; } }
 
 .leftJustify {
   text-align: left; }
 
 .rightBorder {
   border-bottom: 1px solid #9E9E9E; }
-  @media screen and (min-width: 62.5em) {
+  @media screen and (min-width: 48em) {
     .rightBorder {
       border-right: 1px solid #9E9E9E;
       border-bottom: none; } }
 
 .leftBorder {
   border-top: 1px solid #9E9E9E; }
-  @media screen and (min-width: 62.5em) {
+  @media screen and (min-width: 48em) {
     .leftBorder {
       border-left: 1px solid #9E9E9E;
       border-top: none; } }
@@ -1229,60 +1235,74 @@ button {
 .topBorder {
   border-top: 1px solid #9E9E9E; }
 
-.zeroTopMargin {
-  margin-top: 0; }
-
 .zeroMargin {
   margin: 0; }
 
 .zeroTopPadding {
   padding-top: 0; }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 48em) {
   .flex-container {
     display: flex;
     align-content: center;
     align-items: center; } }
 
-.mobileCenter {
-  text-align: center; }
-  @media screen and (min-width: 62.5em) {
-    .mobileCenter {
+.education {
+  text-align: center;
+  padding-top: 1em; }
+  @media screen and (min-width: 48em) {
+    .education {
       text-align: left; } }
 
 .details {
   margin-top: .5em; }
-  @media screen and (min-width: 62.5em) {
+  @media screen and (min-width: 48em) {
     .details {
       padding-left: 1em; } }
 
-.navList {
-  padding: .5em; }
-  .navList li {
+.navigation {
+  padding: 1em 0; }
+  @media screen and (min-width: 43.75em) {
+    .navigation {
+      padding: 1.5em;
+      float: right; } }
+  .navigation li {
     display: inline;
-    padding: 2em; }
+    padding: 0.5em; }
     @media screen and (min-width: 43.75em) {
-      .navList li {
+      .navigation li {
         display: inline;
         padding: 1em; } }
     @media screen and (min-width: 62.5em) {
-      .navList li {
+      .navigation li {
         padding: 1.5em; } }
-  @media screen and (min-width: 43.75em) {
-    .navList {
-      padding: 1.5em; } }
-
-.navLinks {
-  transition: color .25s ease;
-  color: #FFF;
-  padding: .5em; }
 
 .navFooterColor {
   background-color: #3B3B3B; }
 
+.navLinks {
+  transition: color .25s ease;
+  color: #FFF;
+  padding: 1em 0; }
+
+.titleLink {
+  list-style: none;
+  padding: 1em 0; }
+  @media screen and (min-width: 43.75em) {
+    .titleLink {
+      float: left;
+      padding: 1em 0 1em 1em; } }
+
+.title {
+  font: 1.618em "Nixie One", cursive;
+  display: inline; }
+  @media screen and (min-width: 43.75em) {
+    .title {
+      padding-left: 1em; } }
+
 .headerBackground, .projectHeaderBackground {
   background-image: url("../img/greyPattern.png");
-  padding: 10em 5em; }
+  padding: 5em 1em; }
   @media screen and (min-width: 43.75em) {
     .headerBackground, .projectHeaderBackground {
       padding: 10em 4em; } }
@@ -1292,16 +1312,13 @@ button {
 
 .description {
   color: #737373;
-  margin: 1em 5em; }
+  margin: 1em; }
   @media screen and (min-width: 43.75em) {
     .description {
       margin: 1em; } }
   @media screen and (min-width: 62.5em) {
     .description {
       margin: 1.5em 12em; } }
-
-.projectHeaderBackground {
-  padding: 5em; }
 
 .icon {
   width: 50px;
@@ -1311,9 +1328,15 @@ button {
   max-width: 100px;
   padding: .7em .7em; }
 
-@media screen and (min-width: 43.75em) {
-  .socialIcons {
-    margin-top: 1em; } }
+.socialIcons {
+  margin-top: 1em; }
+  @media screen and (min-width: 62.5em) {
+    .socialIcons {
+      margin-top: 0; } }
+
+.imageLink {
+  transition: opacity .20s ease;
+  opacity: 1; }
 
 /*Skills Graph*/
 .graph {
@@ -1327,23 +1350,23 @@ button {
 
 li.percent90 {
   width: 90%;
-  background-color: #22E476; }
+  background-color: #FF38A3; }
 
 li.percent80 {
   width: 80%;
-  background-color: #FF8226; }
+  background-color: #E86633; }
 
 li.percent70 {
   width: 70%;
-  background-color: #F1247A; }
+  background-color: #FF8D38; }
 
 li.percent60 {
   width: 60%;
-  background-color: #21DBC9; }
+  background-color: #FF5E45; }
 
 li.percent70-2 {
   width: 70%;
-  background-color: #3B3B3B; }
+  background-color: #E8333A; }
 
 /*Project Tile styles*/
 .projectTiles {
@@ -1368,50 +1391,94 @@ li.percent70-2 {
 
 .specialText2 {
   font-family: "Nixie One", cursive;
-  color: #22E476;
+  color: #17E85E;
   font-size: 1.333em; }
 
 .specialText3 {
   font-family: "Nixie One", cursive;
-  color: #FF8226;
+  color: #178DE8;
   font-size: 1.333em; }
 
+.projectHeaderBackground {
+  padding: 5em;
+  text-align: center;
+  margin: 0 auto; }
+
 .screenshot {
-  max-width: 500px; }
+  max-width: 18.75em; }
+  @media screen and (min-width: 43.75em) {
+    .screenshot {
+      max-width: 31.25em; } }
 
 .smallScreenshot {
-  max-width: 325px; }
+  max-width: 18.75em; }
+  @media screen and (min-width: 43.75em) {
+    .smallScreenshot {
+      max-width: 20.3125em; } }
 
 .projectPagePadding {
-  padding: 2em 5em; }
+  padding: 2em 1em; }
+  @media screen and (min-width: 43.75em) {
+    .projectPagePadding {
+      padding: 2em 5em; } }
 
 .fullBorder {
   border: 1px solid #9E9E9E;
-  padding: 0.5em; }
+  padding: 0.75em; }
+  @media screen and (min-width: 62.5em) {
+    .fullBorder {
+      padding: 0.5em; } }
 
 .bigTopBottomPadding {
-  padding: 4em 0; }
+  padding: 2em 0; }
+  @media screen and (min-width: 62.5em) {
+    .bigTopBottomPadding {
+      padding: 4em 0; } }
 
-.navLinks:hover {
-  color: #21DBC9; }
+@media screen and (min-width: 48em) {
+  .projectSectionHalf {
+    display: block;
+    width: 100%; } }
+@media screen and (min-width: 62.5em) {
+  .projectSectionHalf {
+    display: inline;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    width: 50%; } }
 
-.imageLink {
-  transition: opacity .20s ease;
-  opacity: 1; }
+@media screen and (min-width: 48em) {
+  .projectSectionThirds {
+    display: block;
+    width: 100%; } }
+@media screen and (min-width: 71.875em) {
+  .projectSectionThirds {
+    display: inline;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+    width: 33.33333%; } }
 
-.imageLink:hover {
-  opacity: .5; }
-
-button:hover,
-button:active {
-  transition: all .25s ease;
+.navLinks:hover,
+.navLinks:active,
+.navLinks:focus {
   color: #21DBC9;
-  border-color: #21DBC9; }
+  outline: none; }
 
-button,
+.imageLink:hover,
+.imageLink:active,
+.imageLink:focus {
+  opacity: .5;
+  outline: none; }
+
 button:hover,
 button:active,
-button:visited {
+button:focus {
+  transition: all .25s ease;
+  color: #21DBC9;
+  border-color: #21DBC9;
   outline: none; }
 
 /*# sourceMappingURL=application.css.map */

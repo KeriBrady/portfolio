@@ -6,19 +6,22 @@
     <title>Keri Brady | Web UI Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/application.css">
   </head>
   <body>
     <header class="fullWidth">
-      <nav class="navFooterColor">
-        <ul class="navList">
-          <li><a class="navLinks" href="index.html">Home</a></li>
-          <li><a class="navLinks" href="#about">About Me</a></li>
+      <nav class="navFooterColor clearfix">
+        <ul class="titleLink">
+          <li><a class="navLinks title" href="index.html">Keri Brady</a></li>
+        </ul>
+        <ul class="navigation">
+          <li><a class="navLinks" href="#about">About</a></li>
           <li><a class="navLinks" href="#projects">Projects</a></li>
           <li><a class="navLinks" href="#contact">Contact</a></li>
-          <li><a class="navLinks" href="">Resume</a></li>
+          <li><a class="navLinks" href="resume-KeriBrady.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
       <section class="headerBackground">
@@ -31,13 +34,17 @@
         <div class="topBottomPadding about">
           <h1 class="zeroMargin">About Me</h1>
         </div>
-        <section class="contentSection grid-container">
+        <section class="contentSection grid-container flex-container">
           <div class="grid-20">
-            <a href=""><img src="img/resumeIcon.png" alt="Resume icon" class="imageLink"></a>
-            <p class="zeroTopMargin">Check out my Resume</p>
+            <a href="">
+              <img src="img/resumeIcon.png" alt="Resume icon" class="imageLink">
+            </a>
+            <p>Check out my Resume</p>
           </div>
           <div class="grid-50 prefix-5 suffix-5 rightBorder leftBorder">
-            <p>I have a well-rounded education with a certificate in <span class="specialText1">Web UI Development</span> and BA in <span class="specialText2">Communication</span>. Professionally, I have worked in tech marketing and retail management. I'm ready for the next challenge that will allow me to grow and expand my skill set in a <span class="specialText3">collaborative environment</span>.</p>
+            <p>
+              I have a well-rounded education with a certificate in <span class="specialText1">Web UI Development</span> and BA in <span class="specialText2">Communication</span>. Professionally, I have worked in tech marketing and retail management. I'm ready for the next challenge that will allow me to grow and expand my skill set in a <span class="specialText3">collaborative environment</span>.
+            </p>
           </div>
           <div class="grid-20 socialIcons">
             <a href="https://github.com/KeriBrady" target="_blank">
@@ -53,11 +60,11 @@
           </div>
         </section>
         <section class="contentSection zeroTopPadding">
-          <h2>Skills &amp; Education</h2>
+          <h2 class="skillsHeader">Skills &amp; Education</h2>
           <div class="skillsSection">
             <div class="leftJustify grid-container topBottomPadding">
-              <div>
-                <ul class="grid-50 skillsPadding graph">
+              <div class="skillsPadding">
+                <ul class="grid-50 graph">
                   <li class="percent90">HTML</li>
                   <li class="percent80">CSS</li>
                   <li class="percent70">SASS</li>
@@ -65,13 +72,11 @@
                   <li class="percent70-2">Design</li>
                 </ul>
               </div>
-              <div class="grid-50 leftJustify leftBorder mobileCenter">
+              <div class="grid-50 leftJustify leftBorder education">
                 <h3>Code Fellows</h3>
                 <p class="details">Web UI Development</p>
                 <h3>Western Washington University</h3>
                 <p class="details">BA, Communication</p>
-              <!-- </div>
-              <div> -->
                 <img src="img/codefellowsLogo.png" alt="Code Fellows logo" class="largeIcon">
                 <img src="img/wwuLogo.png" alt="WWU logo" class="largeIcon">
               </div>
@@ -98,41 +103,28 @@
                 </div>
               </div>
             </li>
-            <li>
-              <div>
-                <a href="">
-                  <img src="img/zoo-tile.png" alt="" class="imageLink">
-                </a>
-                <div class="caption">
-                  <h3>Zoo Website Project</h3>
-                  <p>
-                    This zoo website project was built with a mobile-first strategy. We worked with media queries, responsive grid, modular CSS, and semantic HTML5.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
+            <!-- <li>
               <div>
                 <a href="">
                   <img src="http://placehold.it/300x300" alt="" class="imageLink">
                 </a>
                 <div class="caption">
-                  <h3>Project Title</h3>
+                  <h3>Living Style Guide</h3>
                   <p>
                     This zoo website project was built with a mobile-first strategy. We worked with media queries, responsive grid, modular CSS, and semantic HTML5.
                   </p>
                 </div>
               </div>
-            </li>
+            </li> -->
             <li>
               <div>
-                <a href="">
-                  <img src="http://placehold.it/300x300" alt="" class="imageLink">
+                <a href="project-pages/portfolio.html">
+                  <img src="img/portfolio_thumb.png" alt="Portfolio screenshot" class="imageLink">
                 </a>
                 <div class="caption">
-                  <h3>Project Title</h3>
+                  <h3>Portfolio Website</h3>
                   <p>
-                    This zoo website project was built with a mobile-first strategy. We worked with media queries, responsive grid, modular CSS, and semantic HTML5.
+                    My online portfolio is built with a mobile-first strategy. I worked with media queries, a responsive grid, Sass, SMACSS-inspired file structure, and semantic HTML5.
                   </p>
                 </div>
               </div>
@@ -152,7 +144,7 @@
             </a>
           </div>
           <div class="grid-50">
-            <h2>Follow me online</h2>
+            <h2>Contact me online</h2>
             <a href="https://github.com/KeriBrady" target="_blank">
               <img class="icon imageLink" src="img/github.svg" alt="GitHub">
             </a>
@@ -169,5 +161,7 @@
     <footer class="navFooterColor footerPadding">
       <p class="description">Keri Brady &copy; 2015</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
   </body>
 </html>

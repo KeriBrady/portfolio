@@ -20,14 +20,17 @@
     @media screen and (min-width: $breakpoint-tablet) {
       @include padding(1em 0);
     }
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: $breakpoint-large-tablet) {
       @include padding(0 1.5em);
     }
   }
 }
 
 .projectTileSection {
-  @include padding(5em 5em);
+  @include padding(1em);
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include padding(5em 5em);
+  }
 }
 
 .leftJustify {
@@ -36,7 +39,7 @@
 
 .rightBorder {
   border-bottom: 1px solid $light-gray;
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: $breakpoint-large-tablet) {
     border-right: 1px solid $light-gray;
     border-bottom: none;
   }
@@ -44,7 +47,7 @@
 
 .leftBorder {
   border-top: 1px solid $light-gray;
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: $breakpoint-large-tablet) {
     border-left: 1px solid $light-gray;
     border-top: none;
   }
@@ -52,10 +55,6 @@
 
 .topBorder {
   border-top: 1px solid $light-gray;
-}
-
-.zeroTopMargin {
-  margin-top: 0;
 }
 
 .zeroMargin {
@@ -67,23 +66,24 @@
 }
 
 .flex-container {
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: $breakpoint-large-tablet) {
     display:flex;
     align-content: center;
     align-items: center;
   }
 }
 
-.mobileCenter {
+.education {
   text-align: center;
-  @media screen and (min-width: $breakpoint-desktop) {
+  padding-top: 1em;
+  @media screen and (min-width: $breakpoint-large-tablet) {
     text-align: left;
   }
 }
 
 .details {
   margin-top: .5em;
-  @media screen and (min-width: $breakpoint-desktop) {
+  @media screen and (min-width: $breakpoint-large-tablet) {
     padding-left: 1em;
   }
 }

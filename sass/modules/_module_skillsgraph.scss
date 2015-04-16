@@ -13,21 +13,21 @@
 }
 
 li.percent90 {
-  @include bargraph-style(90%, #22E476);
+  @include bargraph-style(90%, $ninety);
 }
 
 li.percent80 {
-  @include bargraph-style(80%, #FF8226);
+  @include bargraph-style(80%, $eighty);
 }
 
 li.percent70 {
-  @include bargraph-style(70%, #F1247A);
+  @include bargraph-style(70%, $seventy);
 }
 
 li.percent60 {
-  @include bargraph-style(60%, #21DBC9);
+  @include bargraph-style(60%, $sixty);
 }
 
 li.percent70-2 {
-  @include bargraph-style(70%, #3B3B3B);
+  @include bargraph-style(70%, $seventy_2);
 }

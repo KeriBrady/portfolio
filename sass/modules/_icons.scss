@@ -9,7 +9,13 @@
 }
 
 .socialIcons {
-  @media screen and (min-width: $breakpoint-tablet) {
-    margin-top: 1em;
+  margin-top: 1em;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-top: 0;
   }
+}
+
+.imageLink {
+  transition: opacity .20s ease;
+  opacity: 1;
 }

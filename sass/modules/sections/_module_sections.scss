@@ -6,9 +6,8 @@
   background-color: $color-1;
 }
 
-.profilePic {
-  max-width: 300px;
-  border-radius: 50%;
+.skillsHeader {
+  text-decoration: underline;
 }
 
 .projects {
@@ -37,7 +36,10 @@
 }
 
 .skillsPadding {
-  @include padding(0 2em);
+  @include padding(0 0 1em 0);
+  @media screen and (min-width: $breakpoint-large-tablet) {
+    @include padding(0 2em);
+  }
 }
 
 

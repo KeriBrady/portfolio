@@ -10,8 +10,10 @@ $h3-size: 1em;
 // Colors
 
 $color-1: #21DBC9; // turquoise
-$color-2: #FF8226; // orange
-$color-3: #22E476; // green
+$color-2: #178DE8; // blue
+// $color-2: #FF8226; // orange
+$color-3: #17E85E; // green
+// $color-3: #22E476; // green
 
 $light-gray: #9E9E9E; //light gray
 $medium-gray: #737373; // medium gray
@@ -26,6 +28,20 @@ $left: left;
 //Responsive breakpoints
 
 $breakpoint-tablet: 43.75em; //700px
+$breakpoint-large-tablet: 48em; //768px
 $breakpoint-desktop: 62.5em; //1000px
+$breakpoint-large-desktop: 71.875em; //1150px
 
+//Skills graph Colors
 
+$sixty: #FF5E45;
+$seventy: #FF8D38;
+$seventy_2: #E8333A;
+$eighty: #E86633;
+$ninety: #FF38A3;
+
+// $60: #21DBC9
+// $70: #F1247A;
+// $70_2: #3B3B3B;
+// $80: #FF8226;
+// $90: #22E476;

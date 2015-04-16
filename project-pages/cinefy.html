@@ -7,19 +7,21 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
     <link href='http://fonts.googleapis.com/css?family=Nixie+One|Lato:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/application.css">
-
   </head>
   <body>
     <header class="fullWidth">
-      <nav class="navFooterColor">
-        <ul class="navList">
-          <li><a class="navLinks" href="../index.html">Home</a></li>
-          <li><a class="navLinks" href="../index.html#about">About Me</a></li>
+      <nav class="navFooterColor clearfix">
+        <ul class="titleLink">
+          <li><a class="navLinks title" href="../index.html">Keri Brady</a></li>
+        </ul>
+        <ul class="navigation">
+          <li><a class="navLinks" href="../index.html#about">About</a></li>
           <li><a class="navLinks" href="../index.html#projects">Projects</a></li>
           <li><a class="navLinks" href="../index.html#contact">Contact</a></li>
-          <li><a class="navLinks" href="">Resume</a></li>
+          <li><a class="navLinks" href="../resume-KeriBrady.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
       <section class="projectHeaderBackground">
@@ -30,7 +32,7 @@
     </header>
     <main class="projectPagePadding">
       <section class="grid-container bigTopBottomPadding">
-        <div class="grid-50 leftJustify">
+        <div class="leftJustify projectSectionHalf">
           <h1 class="subTitle zeroTopMargin">Overview</h1>
           <p>
             In a four-day sprint, I worked with a team of four JavaScript full-stack developers to design and develop the Cinefy app from the ground up using AngularJS, node.js, database storage, HTML, and CSS.
@@ -39,12 +41,14 @@
             Cinefy is a web application that allows movie watchers to get more out of their viewing experience by providing users with an opportunity to 'like' and later re-visit products, songs, and other fun facts from their favorite films.
           </p>
         </div>
-        <div class="grid-50">
-          <img class="screenshot" src="../img/cinefy_home.png" alt="Screenshot of Cinefy homepage">
+        <div class="projectSectionHalf">
+          <a href="#" data-featherlight="../img/cinefy_home.png">
+            <img class="screenshot" src="../img/cinefy_home.png" alt="Screenshot of Cinefy homepage">
+          </a>
         </div>
       </section>
       <section class="grid-container topBorder bigTopBottomPadding">
-        <div class="grid-33 leftJustify">
+        <div class="leftJustify projectSectionThirds">
           <h1 class="subTitle zeroTopMargin">Process</h1>
           <p>
             As the sole UI Developer, I created style tiles for branding (primarily color and typography), wireframes for site structure and layout, and led development of all HTML and CSS components in the project.
@@ -53,36 +57,42 @@
             To manage tasks, my team used Trello boards. Every morning we would hold a quick stand up meeting to communicate what we had worked on, what we were going to work on that day, and if there was anything blocking our work.
           </p>
         </div>
-        <div class="grid-33">
-          <figure>
-            <img class="smallScreenshot fullBorder" src="../img/style-tile-cinefy1.jpg" alt="Style tile">
+        <div class="projectSectionThirds">
+          <figure class="bigTopBottomPadding">
+            <a href="#" data-featherlight="../img/cinefy_style.jpg">
+              <img class="smallScreenshot fullBorder" src="../img/cinefy_style.jpg" alt="Style tile">
+            </a>
             <figcaption>Final style tile design</figcaption>
           </figure>
         </div>
-        <div class="grid-33">
-          <figure>
-            <img class="smallScreenshot" src="../img/cinefy_trello.jpg" alt="Trello board">
+        <div class="projectSectionThirds">
+          <figure class="bigTopBottomPadding">
+            <a href="#" data-featherlight="../img/cinefy_trello.jpg">
+              <img class="smallScreenshot" src="../img/cinefy_trello.jpg" alt="Trello board">
+            </a>
             <figcaption>Trello board with tasks</figcaption>
           </figure>
         </div>
       </section>
       <section class="grid-container topBorder bigTopBottomPadding">
-        <div class="grid-33 leftJustify">
+        <div class="leftJustify projectSectionThirds">
           <h1 class="subTitle zeroTopMargin">Challenges</h1>
           <p>
             A huge challenge in designing and building Cinefy was figuring out how to showcase its intended user experience without a full native phone app. By collaborating with the JavaScript developers, I designed a demo page for the site that clearly illustrated the timed notification functionality of the app and how it would display on a mobile device as a movie is being watched.
           </p>
         </div>
-        <div class="grid-33">
-          <img class="smallScreenshot fullBorder" src="../img/cinefy_demo.jpg" alt="Cinefy demo page">
+        <div class="projectSectionThirds bigTopBottomPadding">
+          <a href="#" data-featherlight="../img/cinefy_demo.jpg">
+            <img class="smallScreenshot fullBorder" src="../img/cinefy_demo.jpg" alt="Cinefy demo page">
+          </a>
         </div>
-        <div class="grid-33 leftJustify">
+        <div class="leftJustify projectSectionThirds">
           <h1 class="subTitle zeroTopMargin">Technologies</h1>
           <p>
             Cinefy's user interface was built with semantic HTML and modular CSS, organized with a SMACSS file structure.
           </p>
           <p>
-            The interactive features were built with an AngularJS front-end, a Node.js back-end that utilizes a RESTful Express API to route user requests, and a MongoDB persistence layer.
+            The interactive features were built by the JavaScript developers using an AngularJS front-end, a Node.js back-end that utilizes a RESTful Express API to route user requests, and a MongoDB persistence layer.
           </p>
         </div>
       </section>
@@ -90,5 +100,7 @@
     <footer class="navFooterColor footerPadding">
       <p class="description">Keri Brady &copy; 2015</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
