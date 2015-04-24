@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keri Brady | Style Guide Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles">
+    <link href='//fonts.googleapis.com/css?family=Nixie+One|Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../css/application.css">
+  </head>
+  <body>
+    <header class="fullWidth">
+      <nav class="navFooterColor clearfix">
+        <ul class="titleLink">
+          <li><a class="navLinks title" href="../index.html">Keri Brady</a></li>
+        </ul>
+        <ul class="navigation">
+          <li><a class="navLinks" href="../index.html#about">About</a></li>
+          <li><a class="navLinks" href="../index.html#projects">Projects</a></li>
+          <li><a class="navLinks" href="../index.html#contact">Contact</a></li>
+          <li><a class="navLinks" href="../resume-KeriBrady.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </nav>
+      <section class="projectHeaderBackground">
+        <h1 class="zeroMargin">Living Style Guide</h1>
+        <a href="http://peach-style-guide.herokuapp.com/" target="_blank"><button>View the site</button></a>
+        <a href="https://github.com/KeriBrady/living-style-guide" target="_blank"><button>Check the code</button></a>
+      </section>
+    </header>
+    <main class="projectPagePadding">
+      <section class="grid-container bigTopBottomPadding">
+        <div class="leftJustify projectSectionHalf">
+          <h1 class="subTitle zeroTopMargin">Overview</h1>
+          <p>
+            This project required building a living style guide for an existing website, using their existing module and element styles.
+          </p>
+          <p>
+            The idea is based off of style guides like <a class="textLinks" href="http://primercss.io/" target="_blank">Primer</a> and Mail Chimp's <a class="textLinks" href="http://ux.mailchimp.com/patterns" target="_blank">style guide</a>, and would hypothetically be something for UI developers at the website's offices to use for reference when building out pages.
+          </p>
+        </div>
+        <div class="projectSectionHalf">
+          <a href="#" data-featherlight="../img/style_guide_splash.png">
+            <img class="screenshot" src="../img/style_guide_splash.png" alt="Screenshots of Style Guide pages">
+          </a>
+        </div>
+      </section>
+      <section class="grid-container topBorder bigTopBottomPadding">
+        <div class="leftJustify projectSectionThirds">
+          <h1 class="subTitle zeroTopMargin">Process</h1>
+          <p>
+            I chose to base my style guide on <a class="textLinks" href="https://www.peachd.com/" target="_blank">Peach</a>, a Seattle-based company that offers cost-effective food delivery service to companies in the Seattle area. I used their website for inspiration in styling, but deviated when necessary to follow HTML best practices.
+          </p>
+          <p>
+            For example, Peach uses all six heading tags throughout their site with multiple styles. However, best practice is to use heading tags to indicate importance of content rather than styling decisions. For this reason, I stripped the heading tags down to a simple font size range with the understanding that specific styling will be defined on a case-by-case basis.
+          </p>
+        </div>
+        <div class="projectSectionThirds">
+          <figure class="bigTopBottomPadding">
+            <a href="#" data-featherlight="../img/peach_screenshot.png">
+              <img class="smallScreenshot fullBorder" src="../img/peach_screenshot.png" alt="Peach homepage">
+            </a>
+            <figcaption>Homepage of Peach.com</figcaption>
+          </figure>
+        </div>
+        <div class="projectSectionThirds">
+          <figure class="bigTopBottomPadding">
+            <a href="#" data-featherlight="../img/style_guid_type.png">
+              <img class="smallScreenshot fullBorder" src="../img/style_guide_type.png" alt="Style guide typography page">
+            </a>
+            <figcaption>Typography page with headings</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="grid-container topBorder bigTopBottomPadding">
+        <div class="projectSectionHalf">
+          <a href="#" data-featherlight="../img/nodejs_logo.png">
+            <img class="largerIcon" src="../img/nodejs_logo.png" alt="Node.js logo">
+          </a>
+          <a href="#" data-featherlight="../img/express_logo.png">
+            <img class="largerIcon" src="../img/express_logo.png" alt="Express logo">
+          </a>
+          <a href="#" data-featherlight="../img/sass_logo.png">
+            <img class="largerIcon" src="../img/sass_logo.png" alt="Sass logo">
+          </a>
+        </div>
+        <div class="leftJustify projectSectionHalf">
+          <h1 class="subTitle zeroTopMargin">Technologies</h1>
+          <p>
+            I built this style guide using the Node.js platform with an Express framework, created the views with Jade, styled with Sass and CSS, and used the Jeet grid system.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="navFooterColor footerPadding">
+      <p class="description">Keri Brady &copy; 2015</p>
+    </footer>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

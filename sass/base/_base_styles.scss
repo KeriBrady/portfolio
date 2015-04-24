@@ -40,3 +40,11 @@ button {
   transition: all .25s ease;
   outline: none;
 }
+
+.textLinks {
+  color: $color-1;
+  transition: color .25s ease;
+  &:hover {
+    color: $color-2;
+  }
+}

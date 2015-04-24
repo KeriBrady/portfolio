@@ -366,6 +366,12 @@ button {
   transition: all .25s ease;
   outline: none; }
 
+.textLinks {
+  color: #21DBC9;
+  transition: color .25s ease; }
+  .textLinks:hover {
+    color: #178DE8; }
+
 .fullWidth {
   width: 100%; }
 
@@ -1326,6 +1332,10 @@ button {
 
 .largeIcon {
   max-width: 100px;
+  padding: .7em .7em; }
+
+.largerIcon {
+  max-width: 150px;
   padding: .7em .7em; }
 
 .socialIcons {
