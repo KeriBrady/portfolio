@@ -1,6 +1,6 @@
 #My Online Portfolio
 
-My online portfolio is built with semantic HTML5, Sass, media queries, a responsive grid, and a SMACSS-inspired file structure. It features my background skills and education, as well as some recent projects that will be periodically updated. Feel free to contact me for collaboration or work opportunities!
+My online portfolio is built with semantic HTML5, Sass, media queries, a responsive grid, and a SMACSS-inspired file structure. It features my background skills and education, as well as some recent projects that will be periodically updated. Feel free to contact me about collaboration or work opportunities!
 
 Website can be viewed live at [keribrady.com](http://www.keribrady.com)
 
